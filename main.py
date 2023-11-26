@@ -1,6 +1,7 @@
+import os
 import subprocess
 
-subprocess.run("cls")
+os.system("cls")
 output = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=True).stdout.decode("utf-8")
 profiles = []
 
