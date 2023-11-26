@@ -5,16 +5,25 @@ output = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=Tr
 profiles = []
 
 for line in output.splitlines():
-    if "Profile" in line:
+    if "All User Profile" in line:
         profile = {}
         profile["name"] = line.split(":")[1].strip()
         profiles.append(profile)
 
+wifi_data = []
+
 for profile in profiles:
     output = subprocess.run(["netsh", "wlan", "show", "profiles", profile["name"], "key=clear"], capture_output=True).stdout.decode("utf-8")
-    for line in output.splitlines():
-        if "Key Content" in line:
-            password = line.split(":")[1].strip()
-            if password:
-                print(f"Jaringan WI-FI : {profile['name']}")
-                print(f"Kata sandi : {password}\n")
+    if "Key Content" in output:
+        wifi_info = {"Jaringan WI-FI": profile["name"], "Kata sandi": ""}
+        password = [line.split(":")[1].strip() for line in output.splitlines() if "Key Content" in line][0]
+        wifi_info["Kata sandi"] = password
+        wifi_data.append(wifi_info)
+
+# Print data in a table format
+print("-" * 50)
+print("Jaringan WI-FI".ljust(25) + "Kata sandi")
+print("-" * 50)
+for data in wifi_data:
+    print(data["Jaringan WI-FI"].ljust(25) + data["Kata sandi"])
+print("-" * 50)
