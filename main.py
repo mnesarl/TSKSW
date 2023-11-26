@@ -1,23 +1,49 @@
 import subprocess
 
-def extract_wifi_passwords():
-    try:
-        # Get the list of saved Wi-Fi profiles
-        command_output = subprocess.check_output(["netsh", "wlan", "show", "profiles"]).decode("utf-8").split("\n")
-        profile_names = [line.split(":")[1].strip() for line in command_output if "All User Profile" in line]
+def get_wifi_profiles():
+  """
+  Mendapatkan daftar profil WiFi yang pernah terhubung.
 
-        # Extract the passwords for each profile
-        for profile_name in profile_names:
-            profile_info = subprocess.check_output(["netsh", "wlan", "show", "profile", profile_name, "key=clear"]).decode("utf-8").split("\n")
-            password_line = [line.split(":")[1].strip() for line in profile_info if "Key Content" in line]
-            
-            if password_line:
-                print(f"Wi-Fi Network: {profile_name}")
-                print(f"Password: {password_line[0]}")
-                print("")
+  Returns:
+    List of dictionary, berisi informasi profil WiFi.
+  """
 
-    except Exception as e:
-        print(f"Oops! Something went wrong: {str(e)}")
+  output = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=True).stdout.decode("utf-8")
+  profiles = []
+  for line in output.splitlines():
+    if "Profile" in line:
+      profile = {}
+      profile["name"] = line.split(":")[1].strip()
+      profiles.append(profile)
+  return profiles
 
-# Call the function to extract Wi-Fi passwords
-extract_wifi_passwords()
+def get_wifi_password(profile_name):
+  """
+  Mendapatkan password WiFi dari profil tertentu.
+
+  Args:
+    profile_name: Nama profil WiFi.
+
+  Returns:
+    Password WiFi, jika ada.
+  """
+
+  output = subprocess.run(["netsh", "wlan", "show", "profiles", profile_name, "key=clear"], capture_output=True).stdout.decode("utf-8")
+  for line in output.splitlines():
+    if "Key Content" in line:
+      return line.split(":")[1].strip()
+  return None
+
+def main():
+  """
+  Menjalankan program.
+  """
+
+  profiles = get_wifi_profiles()
+  for profile in profiles:
+    password = get_wifi_password(profile["name"])
+    if password:
+      print(f"{profile['name']}: {password}")
+
+if __name__ == "__main__":
+  main()
