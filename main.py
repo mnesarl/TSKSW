@@ -16,4 +16,5 @@ for profile in profiles:
         if "Key Content" in line:
             password = line.split(":")[1].strip()
             if password:
-                print(f"{profile['name']}: {password}")
+                print(f"Jaringan WI-FI : {profile['name']}")
+                print(f"Kata sandi : {password}")
