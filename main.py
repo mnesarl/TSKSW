@@ -17,4 +17,4 @@ for profile in profiles:
             password = line.split(":")[1].strip()
             if password:
                 print(f"Jaringan WI-FI : {profile['name']}")
-                print(f"Kata sandi : {password}")
+                print(f"Kata sandi : {password}\n")
