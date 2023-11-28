@@ -21,7 +21,6 @@ for profile in profiles:
         wifi_info["Kata sandi"] = password
         wifi_data.append(wifi_info)
 
-# Print data in a table format
 print("-" * 50)
 print("Jaringan WI-FI".ljust(25) + "Kata sandi")
 print("-" * 50)
