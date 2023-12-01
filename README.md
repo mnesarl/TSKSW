@@ -1,3 +1,3 @@
-# Ngintip
+# ngintip
 
-Ngintip adalah program Python sederhana yang dibuat untuk melihat informasi WI-FI yang pernah terhubung dengan komputer kita (*Windows 10*).
+Skrip Python yang berfungsi untuk menampilkan informasi jaringan Wi-Fi yang tersimpan pada sistem operasi Windows.
