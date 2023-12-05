@@ -1,3 +1,3 @@
-# ngintip
+# TSKSW
 
-Skrip Python yang berfungsi untuk menampilkan informasi jaringan Wi-Fi yang tersimpan pada sistem operasi Windows.
+Tampilkan semua kata sandi WI-FI.
