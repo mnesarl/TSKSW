@@ -1,7 +1,7 @@
-# program   : tsksw
-# deskripsi : tampilan semua kata sandi wifi 
-# pembuat   : rofidoang03@gmail.com
-# github    : https://github.com/rofidoang03/tsksw
+# Program   : TSKSW
+# Deskripsi : Tampilkan semua kata sandi WI-FI
+# Pembuat   : rofidoang03
+# Github    : https://github.com/rofidoang03/tsksw
 
 import os
 import subprocess
