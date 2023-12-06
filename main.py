@@ -1,12 +1,12 @@
-# Program   : TSKSW
-# Deskripsi : Tampilkan semua kata sandi WI-FI
-# Pembuat   : rofidoang03
-# Github    : https://github.com/rofidoang03/tsksw
-
 import os
 import subprocess
+from colorama import Fore, Style
+
+h = Fore.LIGHTGREEN_EX
+r = Fore.RESET
 
 os.system("cls")
+os.system("title TSKSW")
 
 keluaran = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=True).stdout.decode("utf-8")
 
@@ -28,11 +28,11 @@ for profil in profil_wifi:
         info_wifi["Kata sandi"] = sandi
         data_wifi.append(info_wifi)
 
-print("-" * 50)
-print("Jaringan WI-FI".ljust(25) + "Kata sandi")
-print("-" * 50)
+print(f"{r}-" * 57)
+print(f"     {h}No.".ljust(8) + "     Jaringan WI-FI".ljust(29) + "Kata sandi")
+print(f"{r}-" * 57)
 
-for data in data_wifi:
-    print(data["Jaringan WI-FI"].ljust(25) + data["Kata sandi"])
+for i, data in enumerate(data_wifi, 1):
+    print(f"     {str(i)}".ljust(13) + data['Jaringan WI-FI'].ljust(24) + data['Kata sandi'])
 
-print("-" * 50)
+print("-" * 57)
