@@ -1,6 +1,6 @@
 import os
 import subprocess
-from colorama import Fore, Style
+from colorama import Fore
 
 h = Fore.LIGHTGREEN_EX
 r = Fore.RESET
