@@ -19,7 +19,7 @@ TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk
 3. Tempelkan perintah yang telah disalin ke CMD, lalu tekan [Enter].
 4. Tunggu beberapa saat sampai proses instalasi selesai.
 
-# Cara Menjalankan
+## Cara Menjalankan
 
 > *Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.*
 
