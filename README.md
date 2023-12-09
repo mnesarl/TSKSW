@@ -1,11 +1,11 @@
 # TSKSW
 
-![image](https://github.com/rofidoang03/TSKSW/blob/main/tsksw.gif)
+![TSKSW](https://github.com/rofidoang03/TSKSW/blob/main/tsksw.gif)
 
-TSKSW adalah program Python sederhana yang dibuat untuk menampilkan daftar semua jaringan Wi-Fi yang pernah terhubung dengan komputer, beserta kata sandinya.
+TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk menampilkan daftar semua jaringan Wi-Fi yang pernah terhubung dengan komputer, lengkap dengan kata sandinya.
 
 ## Persyaratan
-- [x] Sistem Operasi Windows 10 >=
+- [x] Sistem Operasi: Windows 10 atau yang lebih baru.
 - [x] Python 3
 - [x] Git
 - [x] Modul Colorama
@@ -21,10 +21,10 @@ TSKSW adalah program Python sederhana yang dibuat untuk menampilkan daftar semua
 
 # Cara Menjalankan
 
-Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.
+> *Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.*
 
 Buka terminal dan ketikkan perintah:
 
 ```
-python3 tsksw.py
+python3 main.py
 ```
