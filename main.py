@@ -1,3 +1,7 @@
+# Program : Tampilkan semua kata sandi WI-FI
+# Pembuat : Rofidoang03
+# Github : https://github.com/rofidoang03/TSKSW
+
 import os
 import subprocess
 from colorama import Fore
