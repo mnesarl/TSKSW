@@ -20,7 +20,6 @@ TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk
 4. Tunggu beberapa saat sampai proses instalasi selesai.
 
 ## Cara Menjalankan 🏃🏻
-
 > *Catatan : Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.*
 
 Buka terminal dan ketikkan perintah:
@@ -29,4 +28,5 @@ Buka terminal dan ketikkan perintah:
 python3 main.py
 ```
 
+## Sponsori program ini
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/rofidoang03)
