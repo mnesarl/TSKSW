@@ -4,13 +4,13 @@
 
 TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk menampilkan daftar semua jaringan Wi-Fi yang pernah terhubung dengan komputer, lengkap dengan kata sandinya.
 
-## Persyaratan
+## Persyaratan 📋
 - [x] Sistem Operasi: Windows 10 atau yang lebih baru.
 - [x] Python 3
 - [x] Git
 - [x] Modul Colorama
 
-## Cara Menginstal
+## Cara Menginstal ⚙️
 1. Buka Command Prompt (CMD).
 2. Salin perintah di bawah ini:
     ```
@@ -19,9 +19,9 @@ TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk
 3. Tempelkan perintah yang telah disalin ke CMD, lalu tekan [Enter].
 4. Tunggu beberapa saat sampai proses instalasi selesai.
 
-## Cara Menjalankan
+## Cara Menjalankan 🏃🏻
 
-> *Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.*
+> *Catatan : Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.*
 
 Buka terminal dan ketikkan perintah:
 
