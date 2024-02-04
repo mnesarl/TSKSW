@@ -8,6 +8,7 @@ from colorama import Fore
 
 h = Fore.LIGHTGREEN_EX
 r = Fore.RESET
+b = Fore.LIGHTBLUE_EX
 
 os.system("cls")
 os.system("title TSKSW")
@@ -40,3 +41,4 @@ for i, data in enumerate(data_wifi, 1):
     print(f"     {str(i)}".ljust(13) + data['Jaringan WI-FI'].ljust(24) + data['Kata sandi'])
 
 print("-" * 57)
+print(f"                     {b}https://github.com/rofidoang03/TSKSW{r}")
