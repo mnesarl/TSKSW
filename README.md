@@ -1,4 +1,5 @@
 # TSKSW
+![](https://github.com/rofidoang03/TSKSW/blob/main/lv_0_20240219015142.mp4)
 TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk menampilkan daftar semua jaringan Wi-Fi yang pernah terhubung dengan komputer, lengkap dengan kata sandinya.
 
 ## Persyaratan 📋
