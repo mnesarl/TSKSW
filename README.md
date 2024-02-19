@@ -1,5 +1,9 @@
-# TSKSW
+<h1 align="center">TSKSW</h1>
+<h3 align="center">Tampilkan Semua Kata Sandi Wifi Windows</h3>
+<p align="center"><a href="hdhdhd">:open_book: Tentang</a> • <a href="">📋nPersyaratan</a> • <a href="">:gear: Cara menginstal</a> • <a href =""> 🏃🏻 Cara menjalankan</a></p>
+
 ![](https://github.com/rofidoang03/TSKSW/blob/main/lv_0_20240219015142.gif)
+
 TSKSW adalah sebuah program sederhana yang ditulis dalam Python, dirancang untuk menampilkan daftar semua jaringan Wi-Fi yang pernah terhubung dengan komputer, lengkap dengan kata sandinya.
 
 ## Persyaratan 📋
