@@ -1,3 +1,7 @@
+<img src="https://img.shields.io/github/repo-size/rofidoang03/TSKSW" />
+<img src="https://img.shields.io/github/stars/rofidoang03/TSKSW" />
+
+
 <h1 align="center">TSKSW</h1>
 <h3 align="center">Tampilkan Semua Kata Sandi Wifi Windows</h3>
 <p align="center"><a href="hdhdhd">:open_book: Tentang</a> • <a href="">📋nPersyaratan</a> • <a href="">:gear: Cara menginstal</a> • <a href =""> 🏃🏻 Cara menjalankan</a></p>
