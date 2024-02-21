@@ -1,4 +1,7 @@
-![](https://img.shields.io/github/repo-size/rofidoang03/TSKSW)
+![Ukuran Repositori](https://img.shields.io/github/repo-size/rofidoang03/TSKSW?label=Ukuran%20Repositori&logo=github)
+[![Dibuat menggunakan Python3](https://img.shields.io/badge/Dibuat%20menggunakan-Python3-blue?logo=python)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/Lisensi-MIT-green.svg?logo=MIT)](https://opensource.org/licenses/MIT)
+[![For Windows](https://img.shields.io/badge/Untuk%20sistem%20operasi%20Windows-cyan?logo=windows)](https://www.microsoft.com/en-us/windows)
 ![](https://img.shields.io/github/stars/rofidoang03/TSKSW)
 ![](https://img.shields.io/github/watchers/rofidoang03/TSKSW)
 ![](https://img.shields.io/github/forks/rofidoang03/TSKSW)
