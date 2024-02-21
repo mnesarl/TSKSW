@@ -1,6 +1,7 @@
-<img src="https://img.shields.io/github/repo-size/rofidoang03/TSKSW" />
-<img src="https://img.shields.io/github/stars/rofidoang03/TSKSW" />
-
+![](https://img.shields.io/github/repo-size/rofidoang03/TSKSW)
+![](https://img.shields.io/github/stars/rofidoang03/TSKSW)
+![](https://img.shields.io/github/watchers/rofidoang03/TSKSW)
+![](https://img.shields.io/github/forks/rofidoang03/TSKSW)
 
 <h1 align="center">TSKSW</h1>
 <h3 align="center">Tampilkan Semua Kata Sandi Wifi Windows</h3>
