@@ -18,7 +18,7 @@ Peringatan: Penggunaan program ini tanpa izin adalah ilegal dan melanggar privas
     <li>Buka Command Prompt (CMD).</li>
     <li>Salin perintah di bawah ini:
         <pre>
-        git clone https://github.com/rofidoang03/TSKSW.git && cd TSKSW && pip3 install -r requirements.txt
+git clone https://github.com/rofidoang03/TSKSW.git && cd TSKSW && pip3 install -r requirements.txt
         </pre>
     </li>
     <li>Tempelkan perintah yang telah disalin ke CMD, lalu tekan [Enter].</li>
