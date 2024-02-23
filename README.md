@@ -24,9 +24,6 @@ git clone https://github.com/rofidoang03/TSKSW.git && cd TSKSW && pip3 install -
     <li>Tunggu beberapa saat sampai proses instalasi selesai.</li>
 </ol>
 <h2>Cara Menjalankan 🏃🏻</h2>
-<blockquote>
-    <p><em>Catatan: Untuk menjalankan program TSKSW, pastikan Anda berada dalam folder TSKSW.</em></p>
-</blockquote>
 <p>Buka Command Prompt (CMD) dan ketikkan perintah:</p>
 <pre>
 python3 main.py
