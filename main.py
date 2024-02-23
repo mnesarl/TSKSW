@@ -13,7 +13,7 @@ from colorama import Fore
 
 # Membuat alias untuk warna-warna yang akan digunakan
 h = Fore.LIGHTGREEN_EX  # Hijau terang
-r = Fore.RESET         # Me-reset warna
+r = Fore.RESET          # Me-reset warna
 b = Fore.LIGHTBLUE_EX   # Biru terang
 
 # Membersihkan layar dan menetapkan judul program
@@ -57,3 +57,4 @@ print("-" * 57)
 
 # Menampilkan informasi tambahan berupa link ke repository GitHub pembuat program
 print(f"                     {b}https://github.com/rofidoang03/TSKSW{r}")
+print(f"{r}-" * 57)
