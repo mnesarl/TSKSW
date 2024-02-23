@@ -1,5 +1,5 @@
 <h1 align="center">TSKSW</h1>
-<h3 align="center">Tampilkan Semua Kata Sandi Wifi Windows</h3>
+<h3 align="center">Tampilkan Semua Kata Sandi Wifi</h3>
 <blockquote align="center">
 Peringatan: Penggunaan program ini tanpa izin adalah ilegal dan melanggar privasi. Pembuat program (Rofidoang03) tidak bertanggung jawab atas penggunaan yang salah. Pastikan Anda memiliki izin resmi sebelum menggunakan program ini.</blockquote>
 <p align="center"><a href="hdhdhd">:open_book: Tentang</a> • <a href="">📋Persyaratan</a> • <a href="">:gear: Cara menginstal</a> • <a href =""> 🏃🏻 Cara menjalankan</a></p>
