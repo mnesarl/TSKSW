@@ -1,6 +1,6 @@
 Cara menginstal TSKSW
 ---------------------
-Buka Command Prompt (CMD) dan ketikkan perintah dibawah ini:
+Buka Command Prompt (CMD) dan ketikkan perintah di bawah ini:
 
 Perintah     
 --------
@@ -11,4 +11,3 @@ Perintah
 ---------------------------------------------------------------
 Sambil menunggu proses instalasi selesai, ngopi dulu bisa kali.
 ---------------------------------------------------------------
-  
