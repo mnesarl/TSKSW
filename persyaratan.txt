@@ -1,0 +1,7 @@
+Persyaratan TSKSW
+-----------------
+
+[1]. Sistem Operasi: Windows 10 atau yang lebih baru.
+[2]. Python 3
+[3]. Git
+[4]. Modul Colorama
