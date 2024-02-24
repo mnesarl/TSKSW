@@ -6,7 +6,7 @@ Perintah
 --------
 [1] git clone https://github.com/rofidoang03/TSKSW.git
 [2] cd TSKSW
-[3] pip3 install -r persyaratan.txt
+[3] pip3 install -r requirements.txt
 
 ---------------------------------------------------------------
 Sambil menunggu proses instalasi selesai, ngopi dulu bisa kali.
