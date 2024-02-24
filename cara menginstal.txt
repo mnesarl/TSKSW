@@ -1,0 +1,14 @@
+Cara menginstal TSKSW
+---------------------
+Buka Command Prompt (CMD) dan ketikkan perintah dibawah ini:
+
+Perintah     
+--------
+[1] git clone https://github.com/rofidoang03/TSKSW.git
+[2] cd TSKSW
+[3] pip3 install -r persyaratan.txt
+
+---------------------------------------------------------------
+Sambil menunggu proses instalasi selesai, ngopi dulu bisa kali.
+---------------------------------------------------------------
+  
