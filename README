@@ -1,3 +1,4 @@
 TSKSW
+-----
 
 TSKSW adalah program python3 yang dikembangkan oleh Rofidoang03, program ini bertujuan untuk menampilkan semua kata sandi dari jaringan Wi-Fi yang tersimpan pada sistem. Dengan menggunakan modul os untuk berinteraksi dengan sistem operasi, subprocess untuk menjalankan perintah shell, dan colorama untuk memberikan warna pada output, program ini memulai dengan membersihkan layar dan menetapkan judul program. Selanjutnya, perintah netsh wlan show profiles digunakan untuk menampilkan semua profil Wi-Fi, dan data yang diperoleh diproses untuk mendapatkan nama semua profil Wi-Fi. Proses berlanjut dengan menggunakan perintah netsh wlan show profiles [nama_profil] key=clear untuk mendapatkan kata sandi dari setiap profil Wi-Fi. Informasi Wi-Fi beserta kata sandi disimpan dalam list data_wifi, yang kemudian ditampilkan dalam format tabel dengan nomor, nama jaringan Wi-Fi, dan kata sandi. Output dihiasi dengan warna untuk memperjelas informasi.
