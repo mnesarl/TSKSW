@@ -2,3 +2,11 @@ TSKSW
 -----
 
 TSKSW adalah program python3 yang dikembangkan oleh Rofidoang03, program ini bertujuan untuk menampilkan semua kata sandi dari jaringan Wi-Fi yang tersimpan pada sistem.
+
+Persyaratan
+-----------
+
+[1]. Sistem Operasi: Windows 10 atau yang lebih baru.
+[2]. Python 3
+[3]. Git
+[4]. Modul Colorama
