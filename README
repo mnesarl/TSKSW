@@ -10,3 +10,17 @@ Persyaratan
 [2]. Python 3
 [3]. Git
 [4]. Modul Colorama
+
+Cara menginstal TSKSW
+---------------------
+Buka Command Prompt (CMD) dan ketikkan perintah di bawah ini:
+
+Perintah     
+--------
+[1] git clone https://github.com/rofidoang03/TSKSW.git
+[2] cd TSKSW
+[3] pip3 install -r requirements.txt
+
+---------------------------------------------------------------
+Sambil menunggu proses instalasi selesai, ngopi dulu bisa kali.
+---------------------------------------------------------------
