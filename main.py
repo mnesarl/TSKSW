@@ -1,71 +1,30 @@
-import os  # Mengimpor modul os untuk interaksi dengan sistem operasi
-import subprocess  # Mengimpor modul subprocess untuk menjalankan perintah shell
-import platform  # Mengimpor modul platform untuk mendapatkan informasi sistem operasi
-from colorama import *  # Mengimpor modul colorama untuk penataan warna output
+import subprocess
+import re
 
-# Membuat alias untuk warna-warna yang akan digunakan
-m = Fore.LIGHTRED_EX # Merah terang
-h = Fore.LIGHTGREEN_EX  # Hijau terang
-r = Style.RESET_ALL  # Me-reset warna
-b = Fore.LIGHTBLUE_EX  # Biru terang
-k = Fore.LIGHTYELLOW_EX  # Kuning terang
+keluaran_perintah = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=True).stdout.decode()
+nama_profil = (re.findall("All User Profile     : (.*)\r", keluaran_perintah))
 
-# Mengecek apakah sistem operasi yang digunakan adalah Windows
-if platform.system() != 'Windows':
-    print(f"{m}Error{r}: Program ini hanya dapat dijalankan di sistem operasi Windows.")
-    exit()
+daftar_wifi = []
 
-# Membersihkan layar
-os.system("cls")
+if len(nama_profil) != 0:
+    for nama in nama_profil:
+        profil_wifi = {}
+        info_profil = subprocess.run(["netsh", "wlan", "show", "profile", nama], capture_output=True).stdout.decode()
 
-print(f"""
-+------------------------------------------------------------------------------------+
-|                                                                                    |
-| {k}Peringatan{r}: Penggunaan program ini tanpa izin adalah ilegal dan melanggar privasi. |
-| Pembuat program (Rofidoang03) tidak bertanggung jawab atas penggunaan yang salah.  |
-| Pastikan Anda memiliki izin resmi sebelum menggunakan program ini.                 |
-|                                                                                    |
-+------------------------------------------------------------------------------------+
-""")
+        if re.search("Security key           : Absent", info_profil):
+            continue
+        else:
+            profil_wifi["ssid"] = nama
+            info_profil_kunci = subprocess.run(["netsh", "wlan", "show", "profile", nama, "key=clear"], capture_output=True).stdout.decode()
+            kata_sandi = re.search("Key Content            : (.*)\r", info_profil_kunci)
 
-input("Tekan [Enter] untuk melanjutkan...")
+            if kata_sandi is None:
+                profil_wifi["password"] = None
+            else:
+                profil_wifi["password"] = kata_sandi[1]
 
-# Membersihkan layar dan menetapkan judul program
-os.system("cls")
-os.system("title TSKSW")
+            daftar_wifi.append(profil_wifi)
 
-# Menjalankan perintah netsh untuk menampilkan semua profil WiFi
-keluaran = subprocess.run(["netsh", "wlan", "show", "profiles"], capture_output=True).stdout.decode("utf-8")
-
-# Membuat daftar kosong untuk menyimpan profil WiFi
-profil_wifi = []
-
-# Memproses keluaran untuk mendapatkan nama semua profil WiFi
-for baris in keluaran.splitlines():
-    if "All User Profile" in baris:
-        profil = {"nama": baris.split(":")[1].strip()}  # Ekstrak nama profil WiFi
-        profil_wifi.append(profil)
-
-# Membuat daftar kosong untuk menyimpan informasi WiFi beserta kata sandinya
-data_wifi = []
-
-# Mengambil kata sandi untuk setiap profil WiFi
-for profil in profil_wifi:
-    keluaran = subprocess.run(["netsh", "wlan", "show", "profiles", profil["nama"], "key=clear"], capture_output=True).stdout.decode("utf-8")
-    if "Key Content" in keluaran:
-        info_wifi = {"Jaringan WI-FI": profil["nama"], "Kata sandi": keluaran.split(":")[1].strip()}  # Ekstrak kata sandi WiFi
-        data_wifi.append(info_wifi)
-
-# Menampilkan hasil dalam format tabel
-print(f"{r}-" * 57)
-print(f"     {h}No.".ljust(8) + "     Jaringan WI-FI".ljust(29) + "Kata sandi")
-print(f"{r}-" * 57)
-
-for i, data in enumerate(data_wifi, 1):
-    print(f"     {str(i)}".ljust(13) + data['Jaringan WI-FI'].ljust(24) + data['Kata sandi'])
-
-print("-" * 57)
-
-# Menampilkan informasi tambahan berupa link ke repository GitHub pembuat program
-print(f"                     {b}https://github.com/rofidoang03/TSKSW{r}")
-print(f"{r}-" * 57)
+with open('wifi_passwords.txt', 'w') as file:
+    for wifi in daftar_wifi:
+        file.write(f"[+] SSID: {wifi['ssid']}, Password: {wifi['password']}\n")
